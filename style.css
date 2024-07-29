@@ -1,0 +1,171 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  border-radius: 24px;
+  position: relative;
+  background-color: #fff;
+  max-width: 370px;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card::before {
+  position: absolute;
+  content: '';
+  height: 36%;
+  width: 100%;
+  background-color: rgb(100, 137, 100);
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 24px 24px 0 0;
+}
+
+.card .profile-picture {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgb(100, 137, 100);
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.profile-picture .zahra-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.card .info-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.info-profile .name {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.info-profile .job {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(100, 100, 100);
+}
+
+.card .social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.social-media .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  height: 34px;
+  width: 34px;
+  margin: 0 8px;
+  text-decoration: none;
+  background-color: #4070f7;
+  border-radius: 50%;
+  transition: width 0.2s,
+  height 0.2s,
+  box-shadow 0.15s;
+}
+
+.card .button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.button .subscribe,
+.button .Message {
+  background-color: rgb(100, 137, 100);
+  border: none;
+  padding: 8px 24px;
+  border-radius: 24px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.4s,
+  border 0.15s,
+  color 0.15s;
+}
+
+.button .subscribe:hover,
+.button .Message:hover {
+  background-color: #fff;
+  border: 1px solid rgb(100, 137, 100);
+  color: rgb(100, 137, 100);
+}
+
+.button .subscribe:active,
+.button .Message:active {
+  opacity: 0.5;
+}
+
+.social-media .link:hover {
+  width: 40px;
+  height: 40px;
+  box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-media .link:active {
+  opacity: 0.7;
+}
+
+.card .stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.stats .analytics {
+  color: #333;
+  border-right: 1px solid #e7e7e7;
+  padding-right: 20px;
+}
+
+.analytics i {
+  font-size: 18px;
+  margin-right: 4px;
+}
+
+.analytics:nth-last-child(1) {
+  border-right: none;
+}
